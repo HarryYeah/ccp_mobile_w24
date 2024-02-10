@@ -1,0 +1,327 @@
+/* Font and visual hierarchy */
+h1{
+    font-size: 32px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    color: darkblue;
+}
+
+header > h1{
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+    color: white;
+    background-color: #181818;
+}
+
+h2{
+    font-size: 24px;
+    color: darkblue;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+h3{
+    font-size: 20px;
+    color: darkblue;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+p, ol > li{
+    font-size: 18px;
+    line-height: 150%;
+    padding: 12px;
+}
+
+ol > li{
+    padding-bottom: 12px;
+}
+
+.text ul > li{
+    display: inline-block;
+    color: darkblue;
+    border: dashed 1px darkblue;
+    border-radius: 6px;
+    padding: 6px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color:rgb(253, 255, 181);
+    color: #585858;
+}
+
+main{
+    margin-left: 24px; 
+    margin-right: 24px;
+}
+
+b{
+    color: darkblue;
+    padding-right: 8px;
+}
+
+hr{
+    border: grey solid 1px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+em{
+    font-size: 24px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Header and navigation */
+/* Navigation is set to the center */
+nav{
+    padding: 24px 0 24px 0;
+    background-color: rgb(253, 255, 181);
+    display: block;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(253, 255, 181);
+}
+
+header ul{
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+}
+
+header li{
+    display: inline-block;
+    background-color:darkblue;
+    border: solid rgb(206, 213, 0);
+    border-width: 0px 3px 3px 0px;
+
+}
+
+header li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    padding: 16px 12px;
+    color: yellow; 
+}
+
+.active a{
+    color: white;
+    background-color: rgb(73, 73, 73);
+    text-decoration: underline;
+}
+
+header a:hover{
+    color: white;
+    background-color: grey;
+    text-decoration: underline;
+}
+
+
+
+/* Skip button */
+.skip{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: darkblue;
+    background-color: rgb(253, 255, 181);
+    top: -40px;
+    position: relative;
+}
+
+
+.skip:focus{
+    top: 0px;
+}
+
+
+
+
+/* Specify classes in the grid */
+.photos img, video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: solid darkblue 6px;
+    border-radius: 12px;
+}
+
+/* Center the single image in the container */
+.single {
+    text-align: center;
+}
+
+/* Center the topic heading in the container */
+.text h2{
+    text-align: center;
+}
+
+/* specify 3:2 layout of all the pages*/
+.grid-overall{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: center;
+    margin: 12px;
+}
+
+.grid-overall > div{
+    justify-self:center;
+    align-self: center;
+    padding: 24px;
+    margin: 12px;
+}
+
+.text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    min-width: 350px;
+    border: darkblue dashed 3px;
+    border-radius: 12px;
+}
+
+.photos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: solid darkblue;
+    border-width: 0px 2px 0px 0px;
+}
+
+.home-left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    min-width: 350px;
+}
+
+.home-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/* Specify button behaviors */
+.grid-overall a{
+    display: inline-block;
+    background-color: darkblue;
+    color: yellow;
+    padding: 16px 12px;
+    text-decoration: none;
+    text-align: center;
+    border: solid yellow 0px 3px 3px 0px;
+    border-radius: 6px;
+}
+
+.grid-overall a:hover{
+    color: white;
+    background-color: grey;
+
+}
+
+
+.grid-gallary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border-radius: 24px;
+}
+
+.grid-gallary > div{
+    align-self: center;
+    justify-self:center;
+    margin-right: 36px;
+    margin-bottom: 36px;
+    width: 150px;
+    height: 200px;
+}
+
+.grid-gallary .a{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-gallary .b{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-gallary .c{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-gallary .d{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Media query */
+@media screen and (min-width: 1000px){
+    .single img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .grid-overall .photos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .grid-overall .home-right{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    nav{
+        padding: 0;
+    }
+
+    header li{
+        display: block;
+    }
+
+    header li a {
+        width: 92%;
+        text-align: left;
+        padding: 16px;
+    }
+
+    hr{
+        visibility: hidden;
+    }
+
+    .text{
+        border-width: 3px 0px 3px 0px;
+        border-radius: 36px;
+    }
+    
+    .photos{
+        border-width: 0px 0px 2px 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
