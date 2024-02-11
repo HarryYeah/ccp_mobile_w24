@@ -299,7 +299,8 @@ header a:hover{
         padding: 48px 24px 48px 24px;
     }
     header li{
-        display: block;
+        display: flex;
+        flex-direction: vertical;
     }
 
     header li a {
