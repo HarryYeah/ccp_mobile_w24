@@ -5,6 +5,7 @@ h1{
     padding-bottom: 36px;
     color: darkblue;
     text-align: center;
+    line-height: 150%; 
 }
 
 header > h1{
@@ -294,6 +295,9 @@ header a:hover{
         padding: 0;
     }
 
+    header > h1{
+        padding: 48px 24px 48px 24px;
+    }
     header li{
         display: block;
     }
