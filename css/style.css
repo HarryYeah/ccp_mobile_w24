@@ -137,17 +137,19 @@ header a:hover{
 
 /* Skip button */
 .skip{
-    display: block;
-    text-align: center;
-    font-size: 24px;
-    color: darkblue;
-    background-color: rgb(253, 255, 181);
-    top: -40px;
-    position: relative;
+    top: -100px;
+    position: absolute;
 }
 
 
 .skip:focus{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: #585858;
+    background-color: none;
     top: 0px;
 }
 
