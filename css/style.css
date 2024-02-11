@@ -297,7 +297,7 @@ header a:hover{
     }
 
     header li a {
-        width: 92%;
+        width: 100%;
         text-align: left;
         padding: 16px;
     }
